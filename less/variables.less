@@ -8,6 +8,19 @@
 // --------------------------------------------------
 
 
+// Solarized
+// -------------------------
+
+@base03:	#002b36;
+@base02:    #073642;
+@base01:    #586e75;
+@base00:    #657b83;
+@base0:     #839496;
+@base1:     #93a1a1;
+@base2:     #eee8d5;
+@base3:     #fdf6e3;
+
+
 // Grays
 // -------------------------
 @black:                 #000;
@@ -21,25 +34,26 @@
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
-@green:                 #46a546;
-@red:                   #9d261d;
-@yellow:                #ffc40d;
-@orange:                #f89406;
-@pink:                  #c3325f;
-@purple:                #7a43b6;
 
+@yellow:    			#b58900;
+@orange:    			#cb4b16;
+@red:       			#dc322f;
+@pink:   				#d33682;
+@purple:    			#6c71c4;
+@blueDark:     			darken(@blue, 15%);
+@blue:      			#268bd2;
+@green:     			#859900;
+@cyan: 					#2aa198;
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
-@textColor:             @grayDark;
+@bodyBackground:        @base3;
+@textColor:             @base00;
 
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @blue;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -55,8 +69,8 @@
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+@headingsFontWeight:    normal;
+@headingsColor:         @base02;
 
 
 // Tables
@@ -140,7 +154,7 @@
 
 // Hr border color
 // -------------------------
-@hrBorder:                @grayLighter;
+@hrBorder:                @base01;
 
 
 // Navbar
@@ -165,8 +179,8 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              @grayLighter;
-@heroUnitHeadingColor:            inherit;
+@heroUnitBackground:              @base2;
+@heroUnitHeadingColor:            @orange;
 @heroUnitLeadColor:               inherit;
 
 
