@@ -11,14 +11,14 @@
 // Solarized
 // -------------------------
 
-@base03:	#002b36;
-@base02:    #073642;
-@base01:    #586e75;
-@base00:    #657b83;
-@base0:     #839496;
-@base1:     #93a1a1;
-@base2:     #eee8d5;
-@base3:     #fdf6e3;
+@base3:	#002b36;
+@base2:    #073642;
+@base1:    #586e75;
+@base0:    #657b83;
+@base00:     #839496;
+@base01:     #93a1a1;
+@base02:     #eee8d5;
+@base03:     #fdf6e3;
 
 
 // Grays
@@ -68,9 +68,9 @@
 @baseLineHeight:        18px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    "Abadi MT Condensed Light", Helvetica, Arial, sans-serif;
 @headingsFontWeight:    normal;
-@headingsColor:         @base02;
+@headingsColor:         @purple;
 
 
 // Tables
@@ -83,9 +83,11 @@
 
 // Buttons
 // -------------------------
-@btnBackground:                     @white;
-@btnBackgroundHighlight:            darken(@white, 10%);
-@btnBorder:                         #ccc;
+@btnBackground:                     @base2;
+@btnBackgroundHighlight:            darken(@btnBackground, 5%);
+@btnBorder:                         @base3;
+@btnTextShadow:						rgba(0,0,0,.75);
+@btnTextColor:						@base01;
 
 @btnPrimaryBackground:              @linkColor;
 @btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 15%);
@@ -99,8 +101,8 @@
 @btnWarningBackground:              lighten(@orange, 15%);
 @btnWarningBackgroundHighlight:     @orange;
 
-@btnDangerBackground:               #ee5f5b;
-@btnDangerBackgroundHighlight:      #bd362f;
+@btnDangerBackground:               @red;
+@btnDangerBackgroundHighlight:      darken(@btnDangerBackground, 10%);
 
 @btnInverseBackground:              @gray;
 @btnInverseBackgroundHighlight:     @grayDarker;
@@ -154,7 +156,8 @@
 
 // Hr border color
 // -------------------------
-@hrBorder:                @base01;
+@hrBorder:                @base2;
+@hrBorderBottom:          darken(@hrBorder, 10%);
 
 
 // Navbar
@@ -180,7 +183,7 @@
 // Hero unit
 // -------------------------
 @heroUnitBackground:              @base2;
-@heroUnitHeadingColor:            @violet;
+@heroUnitHeadingColor:            @purple;
 @heroUnitLeadColor:               inherit;
 
 
@@ -198,11 +201,21 @@
 @successBackground:       #dff0d8;
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
-@infoText:                #3a87ad;
-@infoBackground:          #d9edf7;
+@infoText:                @purple;
+@infoBackground:          darken(@purple, 35%);
 @infoBorder:              darken(spin(@infoBackground, -10), 7%);
 
+// Well
 
+@wellBackground:		  @base2;
+
+// Labels
+
+@labelTextColor:		  @black;
+
+// Lists
+
+@dtColor:				  @base02;
 
 // GRID
 // --------------------------------------------------

@@ -123,7 +123,8 @@ dd {
   line-height: @baseLineHeight;
 }
 dt {
-  font-weight: bold;
+  font-weight: normal;
+  color: @dtColor;
   line-height: @baseLineHeight - 1; // fix jank Helvetica Neue font bug
 }
 dd {
@@ -151,7 +152,7 @@ hr {
   margin: @baseLineHeight 0;
   border: 0;
   border-top: 1px solid @hrBorder;
-  border-bottom: 1px solid @white;
+  border-bottom: 1px solid @hrBorderBottom;
 }
 
 // Emphasis
